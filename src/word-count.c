@@ -17,12 +17,12 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    int ch;
+    int character;
     int in_word = 0;
     int word_count = 0;
 
-    while ((ch = fgetc(file)) != EOF) {
-        if (isspace(ch))
+    while ((character = fgetc(file)) != EOF) {
+        if (isspace(character))
             in_word = 0;
         else if (!in_word) {
             in_word = 1;
